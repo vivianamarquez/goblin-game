@@ -24,6 +24,19 @@ http://127.0.0.1:5173/
 
 You can also open `index.html` directly in a browser, since the game is plain HTML, CSS, and JavaScript.
 
+## Deploy To Vercel
+
+This repo is ready to deploy as a static site on Vercel.
+
+Use these Vercel project settings:
+
+- Framework Preset: `Other`
+- Build Command: leave blank
+- Output Directory: `.`
+- Install Command: leave blank
+
+The included `vercel.json` keeps the deployment static, enables clean URLs, and adds a couple of basic security headers.
+
 ## Controls
 
 - Move: `WASD` or arrow keys
