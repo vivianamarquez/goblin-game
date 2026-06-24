@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goblin Grotto</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-panel" aria-label="Goblin Grotto game">
+        <div class="hud">
+          <div>
+            <span class="hud-label">Loot</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span class="hud-label">Wave</span>
+            <strong id="wave">1</strong>
+          </div>
+          <div>
+            <span class="hud-label">Health</span>
+            <strong id="health">3</strong>
+          </div>
+        </div>
+
+        <canvas id="game" width="960" height="600" aria-label="Play area"></canvas>
+
+        <div class="overlay" id="overlay">
+          <h1>Goblin Grotto</h1>
+          <p>Snatch the gold, dodge the sentries, and keep your tiny green hide intact.</p>
+          <button id="startButton" type="button">Start Run</button>
+        </div>
+      </section>
+
+      <aside class="side-panel" aria-label="Game controls and status">
+        <div class="title-block">
+          <p class="eyebrow">Arcade cave caper</p>
+          <h2>Outfox the sentries.</h2>
+        </div>
+
+        <div class="stat-grid">
+          <div>
+            <span>Best</span>
+            <strong id="best">0</strong>
+          </div>
+          <div>
+            <span>Streak</span>
+            <strong id="streak">0</strong>
+          </div>
+        </div>
+
+        <div class="controls">
+          <p>Move with WASD or arrow keys. Press Space to dash.</p>
+          <div class="touch-pad" aria-label="Touch controls">
+            <button data-dir="up" aria-label="Move up">↑</button>
+            <button data-dir="left" aria-label="Move left">←</button>
+            <button data-dir="dash" aria-label="Dash">Dash</button>
+            <button data-dir="right" aria-label="Move right">→</button>
+            <button data-dir="down" aria-label="Move down">↓</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
